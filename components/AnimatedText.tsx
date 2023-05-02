@@ -36,7 +36,7 @@ const AnimatedText = ({ text, className = '' }: Props): JSX.Element => {
   return (
     <div className="flex items-center justify-center w-full mx-auto py-2 sm:py-0 overflow-hidden">
       <motion.h1
-        className={`inline-block w-full text-dark font-bold capitalize ${className}`}
+        className={`inline-block w-full text-light font-bold capitalize ${className}`}
         variants={quote}
         initial="initial"
         animate="animate"

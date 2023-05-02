@@ -15,14 +15,14 @@ const Home = (): JSX.Element => {
         <meta name="description" content="Alfredo Mendez's portfolio" />
       </Head>
 
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-light w-full min-h-screen">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
                 src={profilePic}
                 alt="Alfredo Méndez"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full max-w-md"
                 priority
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
@@ -45,7 +45,7 @@ const Home = (): JSX.Element => {
                   href="/alfredo-mendez-frontend.pdf"
                   target={'_blank'}
                   download={true}
-                  className="flex items-center bg-dark text-light py-2 px-4 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent shadow-md hover:border-dark md:text-base"
+                  className="flex items-center bg-light text-dark py-2 px-4 rounded-lg text-lg font-semibold hover:bg-dark hover:text-light border-2 border-solid border-transparent shadow-md hover:border-light md:text-base"
                 >
                   Resume <DownloadIcon className="w-5 ml-2" />
                 </Link>

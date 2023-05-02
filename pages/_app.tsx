@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
       <Head>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className={`${monserrat.variable} font-mont bg-light w-full min-h-screen`}>
+      <div className={`${monserrat.variable} font-mont bg-dark w-full min-h-screen`}>
         <NavBar />
         <Component {...pageProps} />
         <Footer />

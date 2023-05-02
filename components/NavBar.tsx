@@ -22,12 +22,12 @@ const CustomLink = ({
 }: CustomLinkProps): JSX.Element => {
   const router = useRouter()
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group text-light`}>
       {title}
       <span
         className={`
         absolute left-0 -bottom-0.5
-        h-[1px] inline-block bg-dark group-hover:w-full transition-[width]
+        h-[1px] inline-block bg-primary group-hover:w-full transition-[width]
         ease-in-out duration-300
         ${router.asPath === href ? 'w-full' : 'w-0'}`}
       >
@@ -56,14 +56,14 @@ const CustomMobileLink = ({
 
   return (
     <button
-      className={`${className} relative group text-light `}
+      className={`${className} relative group text-dark `}
       onClick={handleClick}
     >
       {title}
       <span
         className={`
         absolute left-0 -bottom-0.5
-        h-[1px] inline-block bg-light group-hover:w-full transition-[width]
+        h-[1px] inline-block bg-dark group-hover:w-full transition-[width]
         ease-in-out duration-300
         ${router.asPath === href ? 'w-full' : 'w-0'}`}
       >
@@ -80,21 +80,21 @@ const NavBar = (): JSX.Element => {
     setIsOpen(!isOpen)
   }
   return (
-    <header className="relative flex items-center justify-between w-full px-32 lg:px-16 md:px-12 sm:px-8 py-8 font-medium bg-light">
+    <header className="relative flex items-center justify-between w-full px-32 lg:px-16 md:px-12 sm:px-8 py-8 font-medium bg-dark">
       <button
         className="lg:flex flex-col justify-center items-center hidden"
         onClick={handleClick}
       >
         <span
-          className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+          className={`block h-0.5 w-6 rounded-sm bg-light transition-all duration-300 ease-out ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
             }`}
         ></span>
         <span
-          className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'
+          className={`block h-0.5 w-6 rounded-sm bg-light transition-all duration-300 ease-out my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'
             }`}
         ></span>
         <span
-          className={`block h-0.5 w-6 rounded-sm bg-dark transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
+          className={`block h-0.5 w-6 rounded-sm bg-light transition-all duration-300 ease-out ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
             }`}
         ></span>
       </button>
@@ -104,10 +104,9 @@ const NavBar = (): JSX.Element => {
           <CustomLink href="/" title="Home" />
           <CustomLink href="/about" title="About" />
           <CustomLink href="/projects" title="Projects" />
-          {/* <CustomLink href='/blog' title='Blog' /> */}
         </nav>
 
-        <nav className="flex items-center space-x-4">
+        <nav className="flex items-center space-x-4 text-light">
           <motion.a
             href="https://www.linkedin.com/in/alfredo-jose-mendez-perez-294ba010b/"
             target={'_blank'}
@@ -138,7 +137,7 @@ const NavBar = (): JSX.Element => {
             <motion.div
               initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
               animate={{ scale: 1, opacity: 1 }}
-              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-between items-center min-w-[70vw] p-32 z-10 bg-dark/90 rounded-2xl backdrop-blur-md"
+              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-between items-center min-w-[70vw] p-32 z-10 bg-light/90 rounded-2xl backdrop-blur-md"
             >
               <nav className="flex flex-col justify-center items-center space-y-2">
                 <CustomMobileLink href="/" title="Home" toggle={handleClick} />
@@ -152,10 +151,9 @@ const NavBar = (): JSX.Element => {
                   title="Projects"
                   toggle={handleClick}
                 />
-                {/* <CustomMobileLink href='/blog' title='Blog' toggle={handleClick} /> */}
               </nav>
 
-              <nav className="flex items-center space-x-4 text-light mt-4">
+              <nav className="flex items-center space-x-4 text-dark mt-4">
                 <motion.a
                   href="https://www.linkedin.com/in/alfredo-jose-mendez-perez-294ba010b/"
                   target={'_blank'}

@@ -14,19 +14,19 @@ module.exports = {
         mont: ['var(--font-mont)', ...fontFamily.sans]
       },
       colors: {
-        dark: '#1b1b1b',
-        light: '#f5f5f5',
-        primary: '#b63e96',
+        light: '#DBD7D2',
+        dark: '#003153',
+        primary: '#7ac74f',
         primaryDark: '#58e6d9'
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite'
       },
       backgroundImage: {
-        circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)',
-        circularLightLg: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)',
-        circularLightMd: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)',
-        circularLightSm: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)'
+        circularLight: 'repeating-radial-gradient(rgba(219, 215, 210,0.2) 2px,#003153 5px,#003153 100px)',
+        circularLightLg: 'repeating-radial-gradient(rgba(219, 215, 210,0.2) 2px,#003153 5px,#003153 80px)',
+        circularLightMd: 'repeating-radial-gradient(rgba(219, 215, 210,0.2) 2px,#003153 5px,#003153 60px)',
+        circularLightSm: 'repeating-radial-gradient(rgba(219, 215, 210,0.2) 2px,#003153 5px,#003153 40px)'
       }
     },
     screens: {

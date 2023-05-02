@@ -27,29 +27,29 @@ const about = (): JSX.Element => {
 
           <div className="grid grid-cols-2 gap-16 w-full sm:gap-8">
             <div className="flex flex-col items-start justify-start md:order-2 md:col-span-2">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-primary">
                 Biography
               </h2>
-              <p className="font-medium">
+              <p className="font-medium text-light">
                 Hi there! My name is Alfredo Méndez, and I was born in Valencia,
                 Venezuela. As far as I can remember, I&apos;ve always been
                 interested in technology, which led me to become a
                 telecommunications engineer in 2012.
               </p>
-              <p className="font-medium my-4">
+              <p className="font-medium text-light my-4">
                 During my career, I learned about the science behind things that
                 we take for granted today, such as sending a message, making a
                 call, or browsing the internet. I also wrote my first lines of
                 code in languages such as Pascal, C, and C++, which ignited my
                 love and curiosity for programming.
               </p>
-              <p className="font-medium">
+              <p className="font-medium text-light">
                 Since then, I have worked in various areas in both large and
                 small companies in two different countries. While I have learned
                 a lot from these experiences, I wasn&apos;t as close to
                 technology as I would have liked, so it was time for a change.
               </p>
-              <p className="font-medium my-4">
+              <p className="font-medium text-light my-4">
                 Today, I live in Portugal and dedicate myself entirely to web
                 development. I found it to be the most visual and satisfactory
                 way for me to solve problems by applying technology and
@@ -60,8 +60,8 @@ const about = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="relative h-max rounded-3xl border-2 border-solid border-dark bg-light p-8 md:order-1 md:col-span-2">
-              <div className="absolute top-3 -right-3 -z-10 w-full h-full rounded-3xl bg-dark" />
+            <div className="relative h-max rounded-3xl border-2 border-solid border-light bg-dark p-8 md:order-1 md:col-span-2">
+              <div className="absolute top-3 -right-3 -z-10 w-full h-full rounded-3xl bg-light" />
               <Image
                 src={profilePic}
                 alt="Alfredo Mendez"

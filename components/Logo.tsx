@@ -8,7 +8,7 @@ const Logo = (): JSX.Element => {
     <div className="flex items-center justify-center">
       <MotionLink
         href="/"
-        className="flex items-center justify-center w-12 h-12 bg-dark text-light rounded-full text-lg font-semibold shadow-md"
+        className="flex items-center justify-center w-12 h-12 bg-light text-dark rounded-full text-lg font-semibold shadow-md"
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
         transition={{

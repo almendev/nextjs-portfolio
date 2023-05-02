@@ -22,13 +22,13 @@ const Details = ({ type, time, place, info }: Props): JSX.Element => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: 'spring' }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl text-light sm:text-xl xs:text-lg">
           {type}
         </h3>
-        <span className="capitalize font-medium text-dark/75 xs:text-sm">
+        <span className="capitalize font-medium text-primary xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        <p className="font-medium text-light w-full md:text-sm">{info}</p>
       </motion.div>
     </li>
   )
@@ -44,14 +44,14 @@ const Education = (): JSX.Element => {
 
   return (
     <div className="my-64">
-      <h2 className="w-full mb-32 font-bold text-8xl text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className="w-full mb-32 font-bold text-8xl text-center text-light md:text-6xl xs:text-4xl md:mb-16">
         Education
       </h2>
 
       <div ref={ref} className="relative w-3/4 mx-auto lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-1 h-full bg-dark origin-top md:w-[2px] md:left-[29px] xs:left-[19px]"
+          className="absolute left-9 top-0 w-1 h-full bg-light origin-top md:w-[2px] md:left-[29px] xs:left-[19px]"
         />
 
         <ul className="flex flex-col items-start justify-between ml-4 xs:ml-2">
